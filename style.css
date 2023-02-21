@@ -166,7 +166,7 @@ a {
 
 .container-box-offer {
   display: grid;
-  grid-template-columns: repeat(1, 50%);
+  grid-template-columns: repeat(1, 60%);
   justify-content: center;
   gap: 50px;
 }
