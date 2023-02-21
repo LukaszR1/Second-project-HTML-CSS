@@ -13,7 +13,7 @@ html {
   font-weight: 700;
   color: #fff;
   font-size: 36px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .container-navigation,
@@ -25,7 +25,7 @@ html {
 
 .container-footer {
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .list-navigation {
@@ -100,7 +100,6 @@ a {
 
 .about-us {
   display: flex;
-  justify-content: center;
   width: auto;
   background: rgba(241, 241, 241, 1);
   padding: 50px 0px;
@@ -109,6 +108,7 @@ a {
 .container-employees {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .employees-section-title {
@@ -136,16 +136,18 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .employee-description,
 .new-offer-paragraph {
   font-size: 18px;
+  text-align: justify;
 }
 
 .employee-one,
 .employee-two {
-  margin: 30px;
+  margin: 30px 0px;
   width: 90%;
 }
 
@@ -158,6 +160,9 @@ a {
 .offer-section {
   background-color: rgba(64, 93, 120, 1);
   padding: 50px 0px;
+}
+.container-offer {
+  text-align: center;
 }
 
 .container-box-offer {
@@ -194,12 +199,12 @@ a {
 }
 
 .footer {
-  height: 70px;
+  height: 150px;
 }
 
 .fa-brands {
   font-size: 30px;
-  margin-left: 20px;
+  padding: 10px;
 }
 
 .icons-list {
@@ -210,6 +215,11 @@ a {
 @media screen and (min-width: 768px) {
   .container {
     width: 94%;
+  }
+
+  .container-employees,
+  .container-offer {
+    text-align: start;
   }
 
   .container-box-offer {
@@ -239,6 +249,10 @@ a {
     color: black;
   }
 
+  .container-employees {
+    align-items: start;
+  }
+
   .about-employee {
     display: flex;
     flex-direction: row;
@@ -249,23 +263,18 @@ a {
     flex-direction: row-reverse;
   }
 
-  .container-footer {
-    display: flex;
-    flex-direction: row;
-  }
-
   .container-box-offer {
     grid-template-columns: repeat(3, 200px);
   }
 
   .employee-two {
     text-align: right;
+    margin: 20px;
   }
 
-  .employee-one,
-  .employee-two {
-    margin: 30px;
-    width: 70%;
+  .employee-one {
+    margin: 20px;
+    text-align: left;
   }
 
   .box {
@@ -276,8 +285,13 @@ a {
     transform: scale(1.05);
   }
 
+  .footer {
+    height: 70px;
+  }
+
   .container-footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
