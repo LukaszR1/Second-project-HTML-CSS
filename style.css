@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
-  box-sizing: inherit;
 }
 
 .container {
@@ -209,12 +208,17 @@ a {
 
 .icons-list {
   display: flex;
-  flex-direction: row;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 94%;
+    width: 720px;
+  }
+
+  .list-navigation {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
   }
 
   .container-employees,
@@ -233,12 +237,6 @@ a {
     margin: 0 auto;
   }
 
-  .list-navigation {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-  }
-
   .button-link {
     cursor: pointer;
     transition: 1s;
@@ -247,10 +245,6 @@ a {
   .button-link:hover {
     background-color: #fff;
     color: black;
-  }
-
-  .container-employees {
-    align-items: start;
   }
 
   .about-employee {
@@ -290,7 +284,6 @@ a {
   }
 
   .container-footer {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
