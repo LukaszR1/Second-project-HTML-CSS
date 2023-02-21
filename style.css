@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+  
 }
 
 .container {
@@ -13,6 +14,14 @@ html {
   color: #fff;
   font-size: 36px;
   padding-bottom: 60px;
+  
+}
+.offer-section-title{
+  font-size: 26px;
+}
+
+.header-section-title{
+  line-height: 1.3cm;
 }
 
 .container-navigation,
@@ -78,7 +87,8 @@ a {
 .wrapper-header-content {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 80%;
+  
 }
 
 .header-paragraph {
@@ -116,7 +126,7 @@ a {
 
 .img-employee-one,
 .img-employee-two {
-  height: 200px;
+  width: 200px;
   aspect-ratio: 1;
   background-size: cover;
   background-position: center;
@@ -166,7 +176,7 @@ a {
 
 .container-box-offer {
   display: grid;
-  grid-template-columns: repeat(1, 60%);
+  grid-template-columns: repeat(1, 75%);
   justify-content: center;
   gap: 50px;
 }
@@ -209,16 +219,31 @@ a {
 .icons-list {
   display: flex;
 }
+.container-footer{
+  text-align: center;
+}
 
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
   }
 
+  .offer-section-title{
+    font-size: 36px;
+  }
+
+  .header-section-title{
+      line-height: 1.5cm;    
+  }
+
   .list-navigation {
     display: flex;
     width: 300px;
     justify-content: space-between;
+  }
+
+  .wrapper-header-content {
+    width: 75%;
   }
 
   .container-employees,
@@ -235,6 +260,10 @@ a {
   .container {
     width: 960px;
     margin: 0 auto;
+  }
+
+  .wrapper-header-content {
+    width: 65%;
   }
 
   .button-link {
